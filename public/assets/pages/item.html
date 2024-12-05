@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head">
+                <div class="head">
+                    <img src="../image/logosaif.png" alt="">
+                    <div class="head-a">
+                        <a href="">Главная</a>
+                        <a href="assets/pages/catalog.html">Каталог</a>
+                        <a href="">О нас</a>
+                        <a href="">Собери мебель сам</a>
+                        <div class="head-num">
+                            <a href="">+7(900)000-00-00</a>
+                        </div>
+                    </div>
+                    <!-- Бургер-меню -->
+                    <div class="burger-menu" onclick="toggleMenuCat()">
+                        <div class="burger-bar"></div>
+                        <div class="burger-bar"></div>
+                        <div class="burger-bar"></div>
+                    </div>
+                </div>
+                <div class="burger-nav-cat">
+                    <div class="burger-a">
+                        <a href="">Главная</a>
+                        <a href="assets/pages/catalog.html">Каталог</a>
+                        <a href="">О нас</a>
+                        <a href="">Собери мебель сам</a>
+                        <a href="">+7(900)000-00-00</a>
+                    </div>
+                    <div class="burger-nav-close" onclick="toggleMenuCat()">✖</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="item">
+        <div class="container">
+            <div class="item-cont">
+                <div class="item-cont-img">
+                    <div id="image-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="../image/catalog/divanporado.png" alt="Image 1"></li>
+                                <li class="splide__slide"><img src="image2.jpg" alt="Image 2"></li>
+                                <li class="splide__slide"><img src="image3.jpg" alt="Image 3"></li>
+                                <li class="splide__slide"><img src="image4.jpg" alt="Image 4"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-cont-txt">
+                    <h1>Диван Porada Softbay</h1>
+                    <p>Диван Porada Softbay – это элегантная модель, сочетающая современный дизайн с высокой степенью комфорта. Его плавные линии и мягкие контуры создают уютную атмосферу в любом интерьере. Каркас выполнен из прочного дерева, обеспечивая долговечность конструкции. Обивка из высококачественной ткани или кожи придает дивану изысканный вид, а широкие и глубокие сиденья предлагают максимальное удобство для отдыха. Этот диван идеально подходит для создания стильного и комфортного уголка в вашем доме.</p>
+                    <div class="item-cont-txt-colors">
+                        <h3>Цвета:</h3>
+                        <div class="colors-cont">
+                            <div class="color-1">
+
+                            </div>
+                            <div class="color-2">
+
+                            </div>
+                            <div class="color-3"></div>
+                        </div>
+                    </div>
+                    <div class="item-cont-txt-btns">
+                        <a href="" class="dowload">СКАЧАТЬ 3Д МОДЕЛЬ</a>
+                        <button id="open-popup">Для скачаивания 3д модели нужно зарегистрироваться: Регистрация</button>
+                        <a href="" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
+                <div class="item-cont-char">
+                    <p>Страна производства: <span> Италия</span></p>
+                    <p>Тип предмета:<span> Диван</span></p>
+                    <p>Размеры: <span> 250 x 95 x 65</span></p>
+                    <p>Материал: <span>Дерево (массив), Искусственная кожа, Кожа, Ткань</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="foo-cont">
+                <img src="../image/logosaif.png" alt="">
+                <div class="head-a">
+                    <a href="">Главная</a>
+                    <a href="">Каталог</a>
+                    <a href="">О нас</a>
+                    <a href="">Собери мебель сам</a>
+                    <div class="head-num">
+                        <a href="">+7(900)000-00-00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registration-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="text" placeholder="Ваш ИП или ООО" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Повторите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <a href="#" id="open-login">Уже есть аккаунт? Войти</a>
+        </div>
+    </div>
+
+    <!-- Pop-up окно для авторизации -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form>
+                <input type="tel" placeholder="Номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <a href="#" id="open-registration">Нет аккаунта? Зарегистрироваться</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

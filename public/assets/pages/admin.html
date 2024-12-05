@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head">
+                <img src="../image/logosaif.png" alt="">
+                <div class="head-a">
+                    <a href="../../index.html">Главная</a>
+                    <a href="assets/pages/catalog.html">Каталог</a>
+                    <a href="">О нас</a>
+                    <a href="">Собери мебель сам</a>
+                    <div class="head-num">
+                        <a href="">+7(900)000-00-00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="admin-panel">
+        <h1>Админ Панель</h1>
+
+        <!-- Раздел для добавления товара -->
+        <section class="add-product">
+            <h2>Добавление товара</h2>
+            <form id="product-form">
+                <input type="text" placeholder="Название" required>
+                <textarea placeholder="Описание" required></textarea>
+                <input type="text" placeholder="Цвет" required>
+                <input type="text" placeholder="Страна производителя" required>
+                <input type="text" placeholder="Категория предмета" required>
+                <input type="number" placeholder="Ширина (см)" required>
+                <input type="number" placeholder="Длина (см)" required>
+                <input type="number" placeholder="Глубина (см)" required>
+                <input type="text" placeholder="Материал" required>
+                <button type="submit">Добавить товар</button>
+            </form>
+        </section>
+
+        <!-- Раздел для добавления категории -->
+        <section class="add-category">
+            <h2>Добавление категории</h2>
+            <form id="category-form">
+                <input type="text" placeholder="Название категории" required>
+                <button type="submit">Добавить категорию</button>
+            </form>
+        </section>
+
+        <!-- Таблица с зарегистрированными пользователями -->
+        <section class="registered-users">
+            <h2>Зарегистрированные пользователи</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Email</th>
+                        <th>Номер телефона</th>
+                        <th>Дата регистрации</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Здесь будут отображаться пользователи -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
